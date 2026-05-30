@@ -10,7 +10,7 @@ Streamlit で動く GIF アニメ生成アプリです。
 - `main.py`
   Streamlit の画面本体です。ベース画像生成、コマ画像生成、GIF 作成の UI と状態管理を行います。
 - `openai_client.py`
-  Azure OpenAI API の呼び出しをまとめています。ベース画像生成、各コマ画像の動きを JSON 化、各コマ画像の生成を担当します。
+  Azure OpenAI API の呼び出しをまとめています。ベース画像生成、各コマ画像の動きを JSON 化、各コマ画像の生成。
 - `gif_maker.py`
   複数の PNG バイト列から GIF を生成します。
 - `requirements.txt`
