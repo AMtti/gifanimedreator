@@ -8,19 +8,19 @@ Streamlit で動く GIF アニメ生成アプリです。
 ## ファイル構成
 
 - `main.py`
-  Streamlit の画面本体です。ベース画像生成、コマ画像生成、GIF 作成の UI と状態管理を行います。
+  Streamlit の画面本体です。ベース画像生成、コマ画像生成、GIF 作成の UI と状態管理。
 - `openai_client.py`
   Azure OpenAI API の呼び出しをまとめています。ベース画像生成、各コマ画像の動きを JSON 化、各コマ画像の生成。
 - `gif_maker.py`
-  複数の PNG バイト列から GIF を生成します。
+  複数の PNG バイト列から GIF を生成。
 - `requirements.txt`
-  現在のコードで使用している Python ライブラリ一覧です。
+  現在のコードで使用している Python ライブラリ一覧。
 - `startup.sh`
-  起動補助用ファイルです。ローカルの Windows PowerShell では通常 `streamlit run main.py` で起動できます。
+  起動補助用ファイル。ローカルの Windows PowerShell で `streamlit run main.py` で起動する場合には不要です。
 
 ## 必要な API
 
-このアプリでは Azure OpenAI を使います。
+このアプリでは Azure OpenAI を使っています。
 
 - 画像生成 API
   ベース画像の生成に使用します。
@@ -63,7 +63,7 @@ Azure 側で次を準備してください。
 4. API キーとエンドポイントを控える
 
 このコードは Azure OpenAI SDK の `AzureOpenAI(...)` を使っており、`model=` に直接モデル名を渡しています。  
-環境によっては、Azure Portal 側で実際のデプロイ名をモデル名と同じにしておくのが分かりやすいです。
+環境によっては、Azure Portal 側で実際のデプロイ名をモデル名と同じにしておくほうが簡便です。
 
 ### Azure OpenAI リソースの作成方法
 
