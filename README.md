@@ -16,7 +16,7 @@ Streamlit で動く GIF アニメ生成アプリです。
 - `requirements.txt`
   現在のコードで使用している Python ライブラリ一覧です。
 - `startup.sh`
-  起動補助用ファイルです。`PORT` 環境変数を見て `streamlit run main.py` を `0.0.0.0` で起動します。ローカルの Windows PowerShell では通常 `streamlit run main.py` を使えば足ります。
+  起動補助用ファイルです。ローカルの Windows PowerShell では通常 `streamlit run main.py` で起動できます。
 
 ## 必要な API
 
@@ -32,7 +32,7 @@ Streamlit で動く GIF アニメ生成アプリです。
 現在のコードでは `openai_client.py` から次のモデル名を使っています。
 
 - `gpt-image-1-mini`
-  ベース画像生成と image-to-image のコマ画像生成に使用。
+  ベース画像生成と image-to-image のコマ画像編集に使用。
 - `gpt-4.1-mini`
   動きの説明を JSON 化するために使用。
 
@@ -113,8 +113,6 @@ $env:AZURE_OPENAI_ENDPOINT="https://your-resource-name.openai.azure.com/"
 2. 依存をインストールする
 3. 環境変数を設定する
 4. Streamlit を起動する
-
-ローカル実行時も Python 3.13 系を使う前提です。
 
 例:
 
