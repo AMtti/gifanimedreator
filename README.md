@@ -157,7 +157,7 @@ Azure では次の選択で Web アプリを作成する場合に使います。
 2. `Web アプリ` を作成する
 3. `ランタイム スタック: Python 13` を選ぶ
 4. `オペレーティング システム: Linux` を選ぶ
-5. `価格プラン: Free F1` を選ぶ
+5. `価格プラン: Free F1等` を選ぶ
 
 その後の基本的な流れ:
 
@@ -176,7 +176,7 @@ ZIP に含める主なファイル:
 - `requirements.txt`
 - `startup.sh`
 
-Azure 側で設定しておく環境変数の例:
+Azure 側で設定しておく環境変数:
 
 ```text
 AZURE_OPENAI_API_KEY=your-azure-openai-api-key
