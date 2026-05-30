@@ -93,7 +93,7 @@ Azure OpenAI は、どのモデルでもすべてのリージョンにデプロ�
 
 ## 環境変数
 
-PowerShell では起動前に少なくとも次を設定してください。
+PowerShell では起動前に次の環境変数を設定してください。
 
 ```powershell
 $env:AZURE_OPENAI_API_KEY="your-azure-openai-api-key"
