@@ -16,7 +16,7 @@ Streamlit で動く GIF アニメ生成アプリです。
 - `requirements.txt`
   現在のコードで使用している Python ライブラリ一覧。
 - `startup.sh`
-  起動補助用ファイル。ローカルの Windows PowerShell で `streamlit run main.py` で起動する場合には不要です。
+  起動補助用ファイル。ローカルで `streamlit run main.py` で起動する場合には不要です。
 
 ## 必要な API
 
