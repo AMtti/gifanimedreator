@@ -10,7 +10,7 @@ from openai_client import (
     generate_motion_frame
 )
 
-st.title("GIFアニメ生成アプリ（DALL·E 3：ベース画像 → 可変コマGIF）")
+st.title("GIFアニメ生成アプリ（ベース画像 → 可変コマGIF）")
 
 missing_env_vars = get_missing_openai_env_vars()
 if missing_env_vars:
